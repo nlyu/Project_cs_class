@@ -1,0 +1,61 @@
+Grading r17711 by nlyu2 committed on Fri Sep 23 00:10:22 CDT 2016
+Monad Autograder
+Testing mp3.1 at 2016-09-24 01:30:35
+
+"I think I may have made a student cry during my exam..." ~ Joe DiFebo
+
+Setting up test environment...
+Compiling...
+================================================================
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:302:
+./list.cpp:466:5: error: expected unqualified-id
+    return NULL; // change me!
+    ^
+./list.cpp:467:1: error: extraneous closing brace ('}')
+}
+^
+2 errors generated.
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:302:
+./list.cpp:466:5: error: expected unqualified-id
+    return NULL; // change me!
+    ^
+./list.cpp:467:1: error: extraneous closing brace ('}')
+}
+^
+2 errors generated.
+ld: no input files
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:302:
+./list.cpp:466:5: error: expected unqualified-id
+    return NULL; // change me!
+    ^
+./list.cpp:467:1: error: extraneous closing brace ('}')
+}
+^
+2 errors generated.
+clang-3.5: error: no such file or directory: 'unit_tests.o'
+make: *** [proxy] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from unit_tests.cpp:38:
+In file included from ./list.h:302:
+./list.cpp:466:5: error: expected unqualified-id
+    return NULL; // change me!
+    ^
+./list.cpp:467:1: error: extraneous closing brace ('}')
+}
+^
+2 errors generated.
+ld: no input files
+
+
+Running tests...
+================================================================
+Could not execute test cases
+
+
+Total score...
+================================================================
+TOTAL SCORE: 0
+

@@ -1,0 +1,1028 @@
+Grading r44868 by nlyu2 committed on Tue Nov  1 23:35:39 CDT 2016
+Monad Autograder
+Testing mp5 at 2016-11-02 01:07:27
+
+"(reading a password) Uppercase 0... [...] Lowercase 0..." ~ Sean Massung
+
+Setting up test environment...
+Compiling...
+================================================================
+
+
+Running tests...
+================================================================
+test_default_ctor  . . . . [1 pts] - passed
+test_ctor_1  . . . . . . . [1 pts] - passed
+test_ctor_2  . . . . . . . [2 pts] - passed
+test_buildTree_1 . . . . . [2 pts] - passed
+test_buildTree_2 . . . . . [1 pts] - passed
+test_buildTree_3 . . . . . [2 pts] - passed
+test_cctor_1 . . . . . . . [1 pts] - passed
+test_cctor_2 . . . . . . . [1 pts] - passed
+test_cctor_3 . . . . . . . [1 pts] - passed
+test_cctor_4 . . . . . . . [1 pts] - passed
+test_assign_op_1 . . . . . [1 pts] - passed
+test_assign_op_2 . . . . . [1 pts] - passed
+test_assign_op_3 . . . . . [1 pts] - passed
+test_assign_op_4 . . . . . [1 pts] - passed
+test_getPixel_1  . . . . . [1 pts] - passed
+test_getPixel_2  . . . . . [2 pts] - passed
+test_getPixel_3  . . . . . [2 pts] - passed
+test_getPixel_4  . . . . . [2 pts] - passed
+test_decompress_unpruned_1 [1 pts] - passed
+test_decompress_unpruned_2 [1 pts] - passed
+test_decompress_unpruned_3 [1 pts] - passed
+test_decompress_unpruned_4 [1 pts] - passed
+time_getPixel_logn . . . . [4 pts] - passed
+time_decompress_n (asan) . [4 pts] - FAILED: resolution1
+resolutio
+valgrind_big3 (asan) . . . [4 pts] - passed
+test_clockwiseRotate_1 . . [1 pts] - passed
+test_clockwiseRotate_2 . . [1 pts] - passed
+test_clockwiseRotate_3 . . [2 pts] - passed
+test_clockwiseRotate_4 . . [2 pts] - passed
+test_prune_1 . . . . . . . [2 pts] - passed
+test_prune_2 . . . . . . . [3 pts] - FAILED: unit_tests.cpp:369: Assertion (output == readFile("prune_2.out")) failed
+test_prune_3 . . . . . . . [2 pts] - FAILED: unit_tests.cpp:377: Assertion (output == readFile("prune_3.out")) failed
+test_prune_4 . . . . . . . [5 pts] - FAILED: unit_tests.cpp:387: Assertion (rVal == soln) failed
+test_prune_copy  . . . . . [2 pts] - passed
+test_prune_rotate  . . . . [2 pts] - FAILED: unit_tests.cpp:407: Assertion (rVal == soln) failed
+test_prune_getPixel  . . . [3 pts] - FAILED: unit_tests.cpp:416: [first.getPixel(76, 204) => (143,67,2)] != [soln => (105,37,5)]
+test_pruneSize_1 . . . . . [2 pts] - passed
+test_pruneSize_2 . . . . . [2 pts] - FAILED: unit_tests.cpp:429: [first.pruneSize(1) => 0] != [4 => 4]
+test_pruneSize_3 . . . . . [2 pts] - FAILED: unit_tests.cpp:436: [first.pruneSize(200000) => 0] != [1 => 1]
+test_pruneSize_4 . . . . . [2 pts] - FAILED: unit_tests.cpp:443: [first.pruneSize(0) => 0] != [1 => 1]
+test_pruneSize_5 . . . . . [2 pts] - FAILED: unit_tests.cpp:450: [first.pruneSize(1000) => 0] != [37324 => 37324]
+test_idealPrune_1  . . . . [2 pts] - FAILED: unit_tests.cpp:457: [first.idealPrune(1) => 1] != [44802 => 44802]
+test_idealPrune_2  . . . . [3 pts] - FAILED: unit_tests.cpp:465: [first.idealPrune(3) => 1] != [44802 => 44802]
+test_idealPrune_3  . . . . [2 pts] - FAILED: unit_tests.cpp:472: [first.idealPrune(1) => 1] != [0 => 0]
+test_idealPrune_4  . . . . [5 pts] - FAILED: unit_tests.cpp:479: [first.idealPrune(10000) => 1] != [1011 => 1011]
+val_clockwiseRotate (asan) [2 pts] - passed
+val_prune (asan) . . . . . [4 pts] - FAILED:     #21 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+val_idealPrune (asan)  . . [3 pts] - FAILED:     #3 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #4 0x6ae457 in Quadtree::helper_bui
+test_const_correctness . . [4 pts] - passed
+
+
+Total score...
+================================================================
+TOTAL SCORE: 54
+
+
+
+Detailed test output...
+================================================================
+----------------------------------------------------------------
+time_decompress_n (run under asan) [4 points]
+Result: FAILED: resolution1
+resolutio
+Took unknown time (120000ms timeout)
+Output:
+----------------------------------------------------------------
+Running time_decompress_n [worth 4 points, output below]
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution1
+resolution
+
+----------------------------------------------------------------
+test_prune_2 [3 points]
+Result: FAILED: unit_tests.cpp:369: Assertion (output == readFile("prune_2.out")) failed
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution2
+
+----------------------------------------------------------------
+test_prune_3 [2 points]
+Result: FAILED: unit_tests.cpp:377: Assertion (output == readFile("prune_3.out")) failed
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution8
+
+----------------------------------------------------------------
+test_prune_4 [5 points]
+Result: FAILED: unit_tests.cpp:387: Assertion (rVal == soln) failed
+Took 159ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution512
+The size of pic is 512
+
+----------------------------------------------------------------
+test_prune_rotate [2 points]
+Result: FAILED: unit_tests.cpp:407: Assertion (rVal == soln) failed
+Took 171ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution512
+The size of pic is 512
+
+----------------------------------------------------------------
+test_prune_getPixel [3 points]
+Result: FAILED: unit_tests.cpp:416: [first.getPixel(76, 204) => (143,67,2)] != [soln => (105,37,5)]
+Took 61ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution512
+
+----------------------------------------------------------------
+test_pruneSize_2 [2 points]
+Result: FAILED: unit_tests.cpp:429: [first.pruneSize(1) => 0] != [4 => 4]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution2
+
+----------------------------------------------------------------
+test_pruneSize_3 [2 points]
+Result: FAILED: unit_tests.cpp:436: [first.pruneSize(200000) => 0] != [1 => 1]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution2
+
+----------------------------------------------------------------
+test_pruneSize_4 [2 points]
+Result: FAILED: unit_tests.cpp:443: [first.pruneSize(0) => 0] != [1 => 1]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution8
+
+----------------------------------------------------------------
+test_pruneSize_5 [2 points]
+Result: FAILED: unit_tests.cpp:450: [first.pruneSize(1000) => 0] != [37324 => 37324]
+Took 72ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution512
+
+----------------------------------------------------------------
+test_idealPrune_1 [2 points]
+Result: FAILED: unit_tests.cpp:457: [first.idealPrune(1) => 1] != [44802 => 44802]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution2
+
+----------------------------------------------------------------
+test_idealPrune_2 [3 points]
+Result: FAILED: unit_tests.cpp:465: [first.idealPrune(3) => 1] != [44802 => 44802]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution2
+
+----------------------------------------------------------------
+test_idealPrune_3 [2 points]
+Result: FAILED: unit_tests.cpp:472: [first.idealPrune(1) => 1] != [0 => 0]
+Took 0ms (1000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution8
+
+----------------------------------------------------------------
+test_idealPrune_4 [5 points]
+Result: FAILED: unit_tests.cpp:479: [first.idealPrune(10000) => 1] != [1011 => 1011]
+Took 27ms (10000ms timeout)
+Output:
+----------------------------------------------------------------
+resolution256
+
+----------------------------------------------------------------
+val_prune (run under asan) [4 points]
+Result: FAILED:     #21 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+Took unknown time (45000ms timeout)
+Output:
+----------------------------------------------------------------
+Running val_prune [worth 4 points, output below]
+resolution512
+The size of pic is 512
+
+=================================================================
+==31678==ERROR: LeakSanitizer: detected memory leaks
+
+Too many leaks! Only the first 5000 leaks encountered will be reported.
+Direct leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6865cb in proxy_test::val_prune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6865cb)
+    #2 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #3 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #4 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #5 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #6 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #7 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #8 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #9 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+    #10 0x7ff514c23b14 in __libc_start_main (/lib64/libc.so.6+0x21b14)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6adb0d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6adb0d)
+    #2 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #3 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #4 0x6ae457 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae457)
+    #5 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #6 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #7 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #8 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #9 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #10 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #11 0x6aba12 in Quadtree::buildTree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6aba12)
+    #12 0x6ab620 in Quadtree::Quadtree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ab620)
+    #13 0x686602 in proxy_test::val_prune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x686602)
+    #14 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #15 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #16 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #17 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #18 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #19 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #20 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #21 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+    #22 0x7ff514c23b14 in __libc_start_main (/lib64/libc.so.6+0x21b14)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6adb0d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6adb0d)
+    #2 0x6ae457 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae457)
+    #3 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #4 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #5 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #6 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #7 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #8 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #9 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #10 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #11 0x6aba12 in Quadtree::buildTree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6aba12)
+    #12 0x6ab620 in Quadtree::Quadtree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ab620)
+    #13 0x686602 in proxy_test::val_prune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x686602)
+    #14 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #15 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #16 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #17 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #18 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #19 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #20 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #21 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+
+----------------------------------------------------------------
+val_idealPrune (run under asan) [3 points]
+Result: FAILED:     #3 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #4 0x6ae457 in Quadtree::helper_bui
+Took unknown time (30000ms timeout)
+Output:
+----------------------------------------------------------------
+Running val_idealPrune [worth 3 points, output below]
+resolution128
+
+=================================================================
+==31838==ERROR: LeakSanitizer: detected memory leaks
+
+Too many leaks! Only the first 5000 leaks encountered will be reported.
+Direct leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6878d9 in proxy_test::val_idealPrune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6878d9)
+    #2 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #3 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #4 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #5 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #6 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #7 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #8 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #9 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+    #10 0x7f8b97990b14 in __libc_start_main (/lib64/libc.so.6+0x21b14)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6ae03d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae03d)
+    #2 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #3 0x6ae457 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae457)
+    #4 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #5 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #6 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #7 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #8 0x6aba12 in Quadtree::buildTree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6aba12)
+    #9 0x6ab620 in Quadtree::Quadtree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ab620)
+    #10 0x687910 in proxy_test::val_idealPrune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x687910)
+    #11 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #12 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #13 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #14 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #15 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #16 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #17 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #18 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+    #19 0x7f8b97990b14 in __libc_start_main (/lib64/libc.so.6+0x21b14)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6adb0d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6adb0d)
+    #2 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #3 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #4 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #5 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #6 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #7 0x6ae875 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae875)
+    #8 0x6ae24d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae24d)
+    #9 0x6aba12 in Quadtree::buildTree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6aba12)
+    #10 0x6ab620 in Quadtree::Quadtree(PNG const&, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ab620)
+    #11 0x687910 in proxy_test::val_idealPrune(util::sizedpipestream<512ul>&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x687910)
+    #12 0x4eaf38 in monad_shared::unit_test_input::execute(util::sizedpipestream<512ul>&) const (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4eaf38)
+    #13 0x4d00e3 in proxy::test_execution::child_test() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4d00e3)
+    #14 0x4c1c2e in proxy::test_execution::child() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4c1c2e)
+    #15 0x4bc412 in proxy::RunTests::run_single_test(monad_shared::unit_test_input const&) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4bc412)
+    #16 0x4b20d7 in proxy::RunTests::run_single_test(char const*) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b20d7)
+    #17 0x4b1277 in proxy::RunTests::execute_by_mode() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4b1277)
+    #18 0x4ad9d9 in proxy::RunTests::execute() (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ad9d9)
+    #19 0x4ab32e in main (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x4ab32e)
+    #20 0x7f8b97990b14 in __libc_start_main (/lib64/libc.so.6+0x21b14)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x41f4bb in operator new(unsigned long) /dev/shm/225/lm35/src/llvm/projects/compiler-rt/lib/asan/asan_new_delete.cc:62:35
+    #1 0x6adb0d in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6adb0d)
+    #2 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #3 0x6ae662 in Quadtree::helper_build(PNG const&, int, int, int) (/dev/shm/cs225student/autograder/monad/monad/mp5_grade/proxy-asan+0x6ae662)
+    #4 0x6ae457 in Quadtree::helper_buil
+
+
+----------------------------------------------------------------
+Total score...
+================================================================
+TOTAL SCORE: 54
+
